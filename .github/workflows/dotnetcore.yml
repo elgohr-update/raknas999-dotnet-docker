@@ -31,7 +31,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         dockerfile: ./samples/dotnetapp/Dockerfile
         name: raknas999/dotnet-docker/dotnet-docker-image:v1
